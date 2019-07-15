@@ -12,6 +12,8 @@ using LinqToExcel;
 using ExcelDataReader;
 using ExcelDataReader;
 using System.IO;
+using MySql.Data.MySqlClient;
+
 
 namespace appPrueba
 {
@@ -31,7 +33,9 @@ namespace appPrueba
 
         private void Examinar_FileOk(object sender, CancelEventArgs e)
         {
-            
+            String[] arr = new String[10];
+            arr[1] = "asdasd";
+
             string path = Examinar.FileName;
 
             string p = "";
@@ -59,11 +63,12 @@ namespace appPrueba
 
                     // 2. Use the AsDataSet extension method
                     var result = reader.AsDataSet();
+                    var has = reader.AsDataSet().GetHashCode();
 
                     gvDatosExcel.DataSource = result.Tables[0];
 
                     // The result of each spreadsheet is in result.Tables
-                    MessageBox.Show( p );
+                    MessageBox.Show( has.ToString() );
                 }
             }
 
@@ -81,6 +86,14 @@ namespace appPrueba
 
             #endregion
 
+        }
+
+        private void btnDataBase_Click(object sender, EventArgs e)
+        {
+            dbAccess db = new dbAccess();
+
+            //hacer la conexion de base de datos
+            db.conectar("");
         }
     }
 }

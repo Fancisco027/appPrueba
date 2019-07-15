@@ -31,12 +31,14 @@
             this.Examinar = new System.Windows.Forms.OpenFileDialog();
             this.btnExaminar = new System.Windows.Forms.Button();
             this.gvDatosExcel = new System.Windows.Forms.DataGridView();
+            this.btnDataBase = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gvDatosExcel)).BeginInit();
             this.SuspendLayout();
             // 
             // Examinar
             // 
             this.Examinar.FileName = "opfExcel";
+            this.Examinar.Multiselect = true;
             this.Examinar.FileOk += new System.ComponentModel.CancelEventHandler(this.Examinar_FileOk);
             // 
             // btnExaminar
@@ -57,11 +59,22 @@
             this.gvDatosExcel.Size = new System.Drawing.Size(440, 150);
             this.gvDatosExcel.TabIndex = 1;
             // 
+            // btnDataBase
+            // 
+            this.btnDataBase.Location = new System.Drawing.Point(161, 37);
+            this.btnDataBase.Name = "btnDataBase";
+            this.btnDataBase.Size = new System.Drawing.Size(75, 23);
+            this.btnDataBase.TabIndex = 2;
+            this.btnDataBase.Text = "Guardar";
+            this.btnDataBase.UseVisualStyleBackColor = true;
+            this.btnDataBase.Click += new System.EventHandler(this.btnDataBase_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(568, 311);
+            this.Controls.Add(this.btnDataBase);
             this.Controls.Add(this.gvDatosExcel);
             this.Controls.Add(this.btnExaminar);
             this.Name = "Form1";
@@ -76,6 +89,7 @@
         private System.Windows.Forms.OpenFileDialog Examinar;
         private System.Windows.Forms.Button btnExaminar;
         private System.Windows.Forms.DataGridView gvDatosExcel;
+        private System.Windows.Forms.Button btnDataBase;
     }
 }
 

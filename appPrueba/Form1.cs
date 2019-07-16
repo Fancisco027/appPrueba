@@ -57,6 +57,8 @@ namespace appPrueba
                     {
                         while (reader.Read())
                         {
+                             string instruccionPrueba = "INSERT INTO `dblagaceroprocess`.`comisiones_sistema` (`cliente`, `factura`,`fecha`, `importe`) VALUES ('{0}', '{1}', '{2}');";
+                             instruccionPrueba = string.Format(instruccionPrueba, "Francisco", "000E3322", 123.2);
                              p+= reader.GetString(0);
                         }
                     } while (reader.NextResult());
@@ -93,7 +95,23 @@ namespace appPrueba
             dbAccess db = new dbAccess();
 
             //hacer la conexion de base de datos
-            db.conectar("");
+            string instruccionPrueba = "INSERT INTO `dblagaceroprocess`.`comisiones_sistema` (`cliente`, `factura`, `importe`) VALUES ('{0}', '{1}', '{2}');";
+            instruccionPrueba = string.Format(instruccionPrueba, "Francisco", "000E3322", 123.2);
+
+            int resultado = db.consulta(instruccionPrueba);
+            if (resultado > 0)
+            {
+                MessageBox.Show("El registro prueba se hiso con exito");
+
+            }
+            else
+            {
+                MessageBox.Show("Ocurrio un problema");
+            }
+            //cargarGrid();
+
         }
+
+
     }
 }

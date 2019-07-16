@@ -18,3 +18,10 @@ c:\users\francisco\documents\visual studio 2013\Projects\appPrueba\appPrueba\bin
 c:\users\francisco\documents\visual studio 2013\Projects\appPrueba\appPrueba\bin\Debug\ExcelDataReader.DataSet.dll
 c:\users\francisco\documents\visual studio 2013\Projects\appPrueba\appPrueba\bin\Debug\ExcelDataReader.DataSet.pdb
 c:\users\francisco\documents\visual studio 2013\Projects\appPrueba\appPrueba\bin\Debug\ExcelDataReader.DataSet.xml
+C:\Users\Francisco\Documents\Visual Studio 2013\Projects\appPrueba\appPrueba\bin\Debug\mscorlib.dll
+C:\Users\Francisco\Documents\Visual Studio 2013\Projects\appPrueba\appPrueba\bin\Debug\es\mscorlib.resources.dll
+C:\Users\Francisco\Documents\Visual Studio 2013\Projects\appPrueba\appPrueba\bin\Debug\normidna.nlp
+C:\Users\Francisco\Documents\Visual Studio 2013\Projects\appPrueba\appPrueba\bin\Debug\normnfc.nlp
+C:\Users\Francisco\Documents\Visual Studio 2013\Projects\appPrueba\appPrueba\bin\Debug\normnfd.nlp
+C:\Users\Francisco\Documents\Visual Studio 2013\Projects\appPrueba\appPrueba\bin\Debug\normnfkc.nlp
+C:\Users\Francisco\Documents\Visual Studio 2013\Projects\appPrueba\appPrueba\bin\Debug\normnfkd.nlp
